@@ -24,7 +24,7 @@ jobs:
 
            echo "INFO: Latest tag = $latest_release_tag"
 
-           if [ ! -z $latest_release_tag ] || [ $latest_release_tag == null ]; then
+           if [ ! -z $latest_release_tag ] || [ $latest_release_tag != null ]; then
              latest_tag=$(echo $latest_release_tag | sed 's/v//')
              echo "VERSION=${latest_release_tag}" >> "$GITHUB_OUTPUT"
            else
@@ -55,7 +55,7 @@ jobs:
 
             ## Latest version
             <a href="https://github.com/pnedyalkov91/advanced-weather-widget/releases">
-              <img src="https://img.shields.io/badge/aww-${{ steps.step_version.outputs.VERSION }}-orange" alt="aww-${{ steps.step_version.outputs.VERSION }}">
+              <img src="https://img.shields.io/badge/AdvancedWeatherWidget-${{ steps.step_version.outputs.VERSION }}-orange" alt="AdvancedWeatherWidget-${{ steps.step_version.outputs.VERSION }}">
             </a>
           EOF
           git config --global user.name $GIT_USER
@@ -130,7 +130,7 @@ jobs:
           sed -i 's/${version}/'${latest_tag}'/' /tmp/aww/PKGBUILD
           sed -i 's/${version}/'${latest_tag}'/' /tmp/aww/.SRCINFO
           
-          sha256sum_aww=$(curl -Ls https://github.com/$REPO_DEV/$REPO_NAME/archive/refs/tags/v${latest_tag}.tar.gz | sha256sum | awk {'print $1'})
+          sha256sum_aww=$(curl -Ls https://github.com/$REPO_DEV/$REPO_NAME/archive/refs/tags/${latest_tag}.tar.gz | sha256sum | awk {'print $1'})
 
           sed -i 's/${sha256sums}/'${sha256sum_aww}'/' /tmp/aww/PKGBUILD
           sed -i 's/${sha256sums}/'${sha256sum_aww}'/' /tmp/aww/.SRCINFO
