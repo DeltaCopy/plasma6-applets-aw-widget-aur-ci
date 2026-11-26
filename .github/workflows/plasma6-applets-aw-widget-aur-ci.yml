@@ -24,7 +24,7 @@ jobs:
 
            echo "INFO: Latest tag = $latest_release_tag"
 
-           if [ ! -z $latest_release_tag ]; then
+           if [ ! -z $latest_release_tag ] || [ $latest_release_tag == null ]; then
              latest_tag=$(echo $latest_release_tag | sed 's/v//')
              echo "VERSION=${latest_release_tag}" >> "$GITHUB_OUTPUT"
            else
