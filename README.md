@@ -8,7 +8,7 @@
 
   - https://aur.archlinux.org/packages/plasma6-applets-advanced-weather-widget
 
-  [![Plasma6 Advanced Weather Widget AUR CI](https://github.com/DeltaCopy/plasma6-applets-aw-widget-aur-ci/actions/workflows/plasma6-applets-aw-aur-ci.yml/badge.svg)](https://github.com/DeltaCopy/plasma6-applets-aw-widget-aur-ci/actions/workflows/plasma6-applets-aw-widget-aur-ci.yml)
+  [![Plasma6 Advanced Weather Widget AUR CI](https://github.com/DeltaCopy/plasma6-applets-aw-widget-aur-ci/actions/workflows/plasma6-applets-aw-widget-aur-ci/badge.svg)](https://github.com/DeltaCopy/plasma6-applets-aw-widget-aur-ci/actions/workflows/plasma6-applets-aw-widget-aur-ci.yml)
 
 
   ## Latest version
