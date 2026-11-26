@@ -9,7 +9,7 @@ pkgver=${version}
 pkgrel=1
 arch=('any')
 url="https://github.com/pnedyalkov91/advanced-weather-widget"
-source=("${url}/archive/refs/tags/${version}}.tar.gz")
+source=("${url}/archive/refs/tags/${version}.tar.gz")
 sha256sums=('${sha256sums}')
 
 depends=(
