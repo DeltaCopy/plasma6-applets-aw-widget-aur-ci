@@ -43,13 +43,11 @@ jobs:
           cat << EOF > README.md
             # Plasma 6 Applets - Advanced Weather Widget
 
-            Scheduled pipeline to publish updated PKGBUILD/s for plasma6-applets-advanced-weather-widget AUR package.
+            Scheduled pipeline to publish updated PKGBUILD for plasma6-applets-advanced-weather-widget AUR package.
 
             Upstream repository: https://github.com/pnedyalkov91/advanced-weather-widget
 
-            AUR package:
-
-            - https://aur.archlinux.org/packages/plasma6-applets-advanced-weather-widget
+            AUR package: https://aur.archlinux.org/packages/plasma6-applets-advanced-weather-widget
 
             [![plasma6-applets-aw-widget-aur-ci](https://github.com/DeltaCopy/plasma6-applets-aw-widget-aur-ci/actions/workflows/plasma6-applets-aw-widget-aur-ci.yml/badge.svg)](https://github.com/DeltaCopy/plasma6-applets-aw-widget-aur-ci/actions/workflows/plasma6-applets-aw-widget-aur-ci.yml)
 
