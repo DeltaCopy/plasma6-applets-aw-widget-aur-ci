@@ -55,7 +55,7 @@ jobs:
 
             ## Latest version
             <a href="https://github.com/pnedyalkov91/advanced-weather-widget/releases">
-              <img src="https://img.shields.io/badge/advanced-weather-widget-${{ steps.step_version.outputs.VERSION }}-orange" alt="advanced-weather-widget-${{ steps.step_version.outputs.VERSION }}">
+              <img src="https://img.shields.io/badge/aww-${{ steps.step_version.outputs.VERSION }}-orange" alt="aww-${{ steps.step_version.outputs.VERSION }}">
             </a>
           EOF
           git config --global user.name $GIT_USER
