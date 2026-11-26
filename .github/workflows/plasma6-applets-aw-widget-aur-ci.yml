@@ -51,7 +51,7 @@ jobs:
 
             - https://aur.archlinux.org/packages/plasma6-applets-advanced-weather-widget
 
-            [![Plasma6 Advanced Weather Widget AUR CI](https://github.com/DeltaCopy/plasma6-applets-aw-widget-aur-ci/actions/workflows/plasma6-applets-aw-aur-ci.yml/badge.svg)](https://github.com/DeltaCopy/plasma6-applets-aw-widget-aur-ci/actions/workflows/plasma6-applets-aw-widget-aur-ci.yml)
+            [![Plasma6 Advanced Weather Widget AUR CI](https://github.com/DeltaCopy/plasma6-applets-aw-widget-aur-ci/actions/workflows/plasma6-applets-aw-widget-aur-ci/badge.svg)](https://github.com/DeltaCopy/plasma6-applets-aw-widget-aur-ci/actions/workflows/plasma6-applets-aw-widget-aur-ci.yml)
 
 
             ## Latest version
@@ -82,7 +82,8 @@ jobs:
         run: |
           # openssh required for creating the ssh aur config
           # base-devel includes build dependencies (fakeroot, make, gcc, pkgconf)
-          pacman -Syq base-devel openssh --noconfirm
+          # git to clone repositories
+          pacman -Syq base-devel openssh git --noconfirm
 
       - name: Setup build user
         run: |
