@@ -12,5 +12,5 @@
 
   ## Latest version
   <a href="https://github.com/pnedyalkov91/advanced-weather-widget/releases">
-    <img src="https://img.shields.io/badge/advanced-weather-widget-1.9.0-orange" alt="advanced-weather-widget-1.9.0">
+    <img src="https://img.shields.io/badge/aww-1.9.0-orange" alt="aww-1.9.0">
   </a>
