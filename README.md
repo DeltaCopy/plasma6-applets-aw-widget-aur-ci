@@ -1,4 +1,4 @@
-  # plasma6-applets-aw-widget-aur-ci
+  # Plasma 6 Applets - Advanced Weather Widget
 
   Scheduled pipeline to publish updated PKGBUILD/s for plasma6-applets-advanced-weather-widget AUR package.
 
